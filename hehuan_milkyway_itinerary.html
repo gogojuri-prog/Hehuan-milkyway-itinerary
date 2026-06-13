@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>合歡山銀河之旅｜6/19–6/20 完整行程表</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="銀河行程">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="銀河行程">
+<meta name="theme-color" content="#0d0f14">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0f14'/><text y='55' x='50' text-anchor='middle' font-size='55'>🌌</text></svg>">
+<link rel="manifest" href="data:application/json,{&quot;name&quot;:&quot;合歡山銀河之旅&quot;,&quot;short_name&quot;:&quot;銀河行程&quot;,&quot;start_url&quot;:&quot;/&quot;,&quot;display&quot;:&quot;standalone&quot;,&quot;background_color&quot;:&quot;%230d0f14&quot;,&quot;theme_color&quot;:&quot;%230d0f14&quot;}">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0d0f14;
+    --bg2: #13161e;
+    --bg3: #1a1e28;
+    --border: rgba(255,255,255,0.07);
+    --border2: rgba(255,255,255,0.13);
+    --text: #e8eaf0;
+    --text2: #9099b0;
+    --text3: #5a6175;
+    --accent: #7eb8f7;
+    --accent2: #4a8fd4;
+    --gold: #f0c060;
+    --gold2: #c89030;
+    --teal: #4ecba0;
+    --red: #e06060;
+    --purple: #a088e8;
+    --green: #6ab87a;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .hero {
+    background: linear-gradient(180deg, #07090f 0%, #0d1120 60%, var(--bg) 100%);
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 20%, rgba(80,120,200,0.08), transparent);
+    pointer-events: none;
+  }
+  .stars-deco {
+    position: absolute; top: 0; left: 0; right: 0; height: 100%;
+    background-image:
+      radial-gradient(1px 1px at 15% 20%, rgba(255,255,255,0.6), transparent),
+      radial-gradient(1px 1px at 35% 10%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1px 1px at 55% 30%, rgba(255,255,255,0.5), transparent),
+      radial-gradient(1px 1px at 75% 15%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1px 1px at 85% 25%, rgba(255,255,255,0.5), transparent),
+      radial-gradient(1px 1px at 25% 40%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1px 1px at 65% 8%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1px 1px at 90% 35%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1.5px 1.5px at 42% 22%, rgba(255,255,255,0.7), transparent),
+      radial-gradient(1.5px 1.5px at 78% 12%, rgba(255,255,255,0.6), transparent);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-size: 11px; letter-spacing: 0.15em; color: var(--text3);
+    text-transform: uppercase; margin-bottom: 0.75rem;
+    position: relative;
+  }
+  .hero h1 {
+    font-size: 2rem; font-weight: 300; color: var(--text);
+    letter-spacing: 0.02em; margin-bottom: 0.5rem;
+    position: relative;
+  }
+  .hero h1 span { color: var(--gold); font-weight: 400; }
+  .hero-sub {
+    font-size: 13px; color: var(--text2);
+    position: relative; margin-bottom: 1.5rem;
+  }
+  .hero-badges {
+    display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+    position: relative;
+  }
+  .badge {
+    font-size: 11px; padding: 4px 12px; border-radius: 20px;
+    border: 1px solid; font-weight: 500;
+  }
+  .badge-gold { color: var(--gold); border-color: rgba(240,192,96,0.3); background: rgba(240,192,96,0.07); }
+  .badge-blue { color: var(--accent); border-color: rgba(126,184,247,0.3); background: rgba(126,184,247,0.07); }
+  .badge-teal { color: var(--teal); border-color: rgba(78,203,160,0.3); background: rgba(78,203,160,0.07); }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+  /* ── SECTION ── */
+  .section { margin-bottom: 2.5rem; }
+  .section-label {
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text3); margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .section-label::after {
+    content: ''; flex: 1; height: 1px; background: var(--border);
+  }
+
+  /* ── DAY HEADER ── */
+  .day-header {
+    background: var(--bg3); border: 1px solid var(--border2);
+    border-radius: 10px; padding: 14px 18px;
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 6px;
+  }
+  .day-pill {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.08em;
+    padding: 4px 10px; border-radius: 20px; flex-shrink: 0;
+  }
+  .day-pill-1 { background: rgba(126,184,247,0.15); color: var(--accent); }
+  .day-pill-2 { background: rgba(240,192,96,0.15); color: var(--gold); }
+  .day-title { font-size: 15px; font-weight: 500; color: var(--text); }
+  .day-meta { font-size: 11px; color: var(--text3); margin-left: auto; }
+
+  /* ── TIMELINE ── */
+  .timeline { padding-left: 0; }
+  .tl-row { display: flex; gap: 0; position: relative; }
+  .tl-time {
+    min-width: 60px; text-align: right; padding: 12px 14px 12px 0;
+    font-size: 11px; color: var(--text3); font-weight: 500; flex-shrink: 0;
+    font-family: 'Helvetica Neue', monospace;
+  }
+  .tl-gutter {
+    display: flex; flex-direction: column; align-items: center; flex-shrink: 0; width: 20px;
+  }
+  .tl-dot {
+    width: 7px; height: 7px; border-radius: 50%; margin-top: 15px; flex-shrink: 0;
+    background: var(--border2);
+  }
+  .tl-dot.d-blue { background: var(--accent); box-shadow: 0 0 6px rgba(126,184,247,0.4); }
+  .tl-dot.d-gold { background: var(--gold); box-shadow: 0 0 6px rgba(240,192,96,0.4); }
+  .tl-dot.d-teal { background: var(--teal); box-shadow: 0 0 6px rgba(78,203,160,0.4); }
+  .tl-dot.d-red  { background: var(--red); }
+  .tl-dot.d-purple { background: var(--purple); }
+  .tl-vline { width: 1px; background: var(--border); flex: 1; min-height: 6px; }
+  .tl-body { padding: 8px 0 10px 14px; flex: 1; }
+  .tl-label { font-size: 14px; font-weight: 500; color: var(--text); }
+  .tl-desc { font-size: 12px; color: var(--text2); margin-top: 4px; line-height: 1.65; }
+  .tl-link { font-size: 11px; color: var(--accent2); text-decoration: none; display: inline-block; margin-top: 4px; }
+  .tl-link:hover { text-decoration: underline; }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+  .tag {
+    font-size: 10px; padding: 2px 8px; border-radius: 20px;
+    border: 1px solid; font-weight: 500;
+  }
+  .tag-blue { color: var(--accent); border-color: rgba(126,184,247,0.25); }
+  .tag-gold { color: var(--gold); border-color: rgba(240,192,96,0.25); }
+  .tag-teal { color: var(--teal); border-color: rgba(78,203,160,0.25); }
+  .tag-red  { color: var(--red); border-color: rgba(224,96,96,0.25); }
+  .tag-purple { color: var(--purple); border-color: rgba(160,136,232,0.25); }
+  .tag-green { color: var(--green); border-color: rgba(106,184,122,0.25); }
+
+  /* ── ALERT BOXES ── */
+  .alert {
+    border-radius: 6px; padding: 9px 12px; margin-top: 8px;
+    font-size: 12px; line-height: 1.6;
+    border-left: 3px solid;
+  }
+  .alert-warn { background: rgba(240,192,96,0.06); border-color: var(--gold2); color: #c8a060; }
+  .alert-info { background: rgba(126,184,247,0.06); border-color: var(--accent2); color: #8ab8e8; }
+  .alert-ok   { background: rgba(78,203,160,0.06); border-color: var(--teal); color: #70c090; }
+  .alert b { font-weight: 600; }
+
+  /* ── SHOOTING CARDS ── */
+  .shoot-card {
+    background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 10px; overflow: hidden; margin-bottom: 10px;
+  }
+  .shoot-head {
+    background: var(--bg3); border-bottom: 1px solid var(--border);
+    padding: 10px 16px; display: flex; align-items: center; gap: 10px;
+  }
+  .shoot-num {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--accent2); color: white;
+    font-size: 11px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .shoot-title { font-size: 13px; font-weight: 500; color: var(--accent); }
+  .shoot-time { font-size: 11px; color: var(--text3); margin-left: auto; }
+  .shoot-body { padding: 14px 16px; }
+  .meta-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 8px; margin-bottom: 12px;
+  }
+  .meta-cell {
+    background: var(--bg3); border-radius: 6px; padding: 8px 10px;
+    border: 1px solid var(--border);
+  }
+  .meta-label { font-size: 10px; color: var(--text3); margin-bottom: 3px; }
+  .meta-val { font-size: 12px; font-weight: 500; color: var(--text); }
+  .steps { list-style: none; }
+  .steps li {
+    font-size: 12px; color: var(--text2); padding-left: 14px;
+    position: relative; margin-bottom: 5px; line-height: 1.6;
+  }
+  .steps li::before { content: "→"; position: absolute; left: 0; color: var(--text3); font-size: 10px; top: 2px; }
+  .steps li b { color: var(--text); font-weight: 500; }
+
+  /* ── PARAM TABLE ── */
+  .param-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+  .param-block { }
+  .param-block-title {
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text3); margin-bottom: 8px;
+  }
+  .param-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 4px 0; border-bottom: 1px solid var(--border);
+  }
+  .param-row:last-child { border-bottom: none; }
+  .param-key { font-size: 11px; color: var(--text2); }
+  .param-val { font-size: 12px; font-weight: 500; color: var(--text); font-family: 'Helvetica Neue', monospace; }
+
+  /* ── GEAR ── */
+  .gear-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .gear-block {
+    background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 14px;
+  }
+  .gear-title {
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text3); margin-bottom: 8px;
+  }
+  .gear-list { list-style: none; }
+  .gear-list li {
+    font-size: 12px; color: var(--text2); line-height: 1.9;
+    padding-left: 12px; position: relative;
+  }
+  .gear-list li::before { content: "·"; position: absolute; left: 3px; color: var(--text3); }
+
+  /* ── LENS BOX ── */
+  .lens-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .lens-card {
+    background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 14px;
+  }
+  .lens-mm { font-size: 20px; font-weight: 300; color: var(--accent); margin-bottom: 2px; }
+  .lens-name { font-size: 11px; color: var(--text3); margin-bottom: 8px; }
+  .lens-uses { list-style: none; }
+  .lens-uses li {
+    font-size: 11px; color: var(--text2); line-height: 1.8;
+    padding-left: 12px; position: relative;
+  }
+  .lens-uses li::before { content: "·"; position: absolute; left: 3px; color: var(--text3); }
+
+  /* ── FOOTER ── */
+  .footer {
+    text-align: center; padding: 2rem 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 11px; color: var(--text3);
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.5rem; }
+    .param-grid { grid-template-columns: 1fr; }
+    .tl-time { min-width: 48px; font-size: 10px; }
+    .day-meta { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="stars-deco"></div>
+  <div class="hero-eyebrow">2026 · 合歡山暗空公園</div>
+  <h1>銀河追星之旅<br><span>6/19–6/20</span></h1>
+  <p class="hero-sub">松雪樓景觀雙人房 · 海拔 3,150m · 新月後第5天</p>
+  <div class="hero-badges">
+    <span class="badge badge-gold">月相絕佳 · 無月光干擾</span>
+    <span class="badge badge-blue">銀河 19:30–02:00</span>
+    <span class="badge badge-teal">石門山日出 05:12</span>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ══════════════════ DAY 1 ══════════════════ -->
+<div class="section">
+  <div class="section-label">Day 1 · 6/19（五）</div>
+
+  <div class="day-header">
+    <span class="day-pill day-pill-1">DAY 1</span>
+    <span class="day-title">台南出發 → 清境午餐 → 松雪樓 → 銀河拍攝</span>
+    <span class="day-meta">約 16.5 小時行程</span>
+  </div>
+
+  <div class="timeline">
+
+    <!-- 09:30 -->
+    <div class="tl-row">
+      <div class="tl-time">08:00</div>
+      <div class="tl-gutter"><div class="tl-dot d-blue"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">台南出發</div>
+        <div class="tl-desc">86快速道路 → 國道3號 → 國道6號（埔里出口）→ 台14線 → 霧社 → 台14甲線，車程約 2.5–3 小時</div>
+        <div class="tags">
+          <span class="tag tag-blue">車程約 2.5hr</span>
+          <span class="tag tag-gold">端午連假提早出發，避開車潮</span>
+        </div>
+        <div class="alert alert-warn">⚠️ 6/19 為端午連假第一天，09:00 後國道6號埔里匝道及台14線開始塞車，08:00 出發可有效避開。</div>
+      </div>
+    </div>
+
+    <!-- 12:00 -->
+    <div class="tl-row">
+      <div class="tl-time">10:30</div>
+      <div class="tl-gutter"><div class="tl-dot d-gold"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">斯娜堡景觀餐廳｜早午餐</div>
+        <div class="tl-desc">
+          原住民創意料理，評分 4.9 ★。2人份套餐推薦：<b>烤全雞套餐</b>或<b>鹽烤香茅魚套餐</b>，附原民涼拌拼盤、高山高麗菜、清湯。
+          用餐時可遠眺碧湖與清境全景。吃完可逛旁邊賽德克故事市集。
+        </div>
+        <div class="tags">
+          <span class="tag tag-teal">原民料理</span>
+          <span class="tag tag-blue">11:00 開門第一輪</span>
+          <span class="tag tag-gold">📞 訂位請說11:00第一輪 0958-405-520</span>
+        </div>
+        <div class="alert alert-warn">⚠️ <b>出發前務必電話訂位</b>，說2人、週五11:00第一輪，空間不大，景觀位需提早預約。</div>
+        <a class="tl-link" href="https://www.google.com/maps/place/?q=place_id:ChIJ_TOClD7CaDQR-uD6G11R5Ko" target="_blank">📍 南投縣仁愛鄉信義巷41號 → Google Maps</a>
+        <div class="tags" style="margin-top:6px;">
+          <span class="tag tag-purple">@55mm 拍食物 · 軌道C</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13:00 -->
+    <div class="tl-row">
+      <div class="tl-time">12:00</div>
+      <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">賽德克故事市集</div>
+        <div class="tl-desc">斯娜堡旁邊，逛逛在地賽德克族農產、手工藝品，試喝高山茶，輕鬆散步約30分鐘</div>
+        <div class="tags"><span class="tag tag-teal">免費</span><span class="tag tag-blue">30 分鐘</span></div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-time">12:30</div>
+      <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">妮娜巧克力清境創始店</div>
+        <div class="tl-desc">高山手工巧克力，帶一盒上松雪樓當宵夜，停留約 10–15 分鐘即可</div>
+        <div class="tags"><span class="tag tag-blue">免門票</span><span class="tag tag-gold">09:00–18:00</span></div>
+        <a class="tl-link" href="https://maps.google.com/?q=南投縣仁愛鄉榮光巷8-3號" target="_blank">📍 南投縣仁愛鄉榮光巷8-3號 → Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 13:15 -->
+    <div class="tl-row">
+      <div class="tl-time">12:45</div>
+      <div class="tl-gutter"><div class="tl-dot d-blue"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">出發往松雪樓</div>
+        <div class="tl-desc">清境 → 台14甲線 33K 松雪樓，車程約 45–50 分鐘。山路多急彎，請勿超速，注意對向來車</div>
+        <div class="tags"><span class="tag tag-blue">車程約 50 分</span><span class="tag tag-gold">海拔持續上升，耳鳴正常</span></div>
+      </div>
+    </div>
+
+    <!-- 15:00 -->
+    <div class="tl-row">
+      <div class="tl-time">13:45</div>
+      <div class="tl-gutter"><div class="tl-dot d-teal"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">抵達松雪樓｜寄放行李，大廳休息</div>
+        <div class="tl-desc">15:00 才能正式入房。先將行李寄放櫃台，在大廳沙發或旁邊觀景台吹風休息，讓身體開始適應 3,150m 海拔，比在清境待著舒服且更有效率</div>
+        <div class="tags">
+          <span class="tag tag-teal">✓ 順便適應高度</span>
+          <span class="tag tag-blue">觀景台可拍奇萊連峰</span>
+        </div>
+        <a class="tl-link" href="https://www.google.com/maps/place/?q=place_id:ChIJNbD8IRaTaDQRE71-kF2HaZs" target="_blank">📍 松雪樓 → Google Maps</a>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-time">15:00</div>
+      <div class="tl-gutter"><div class="tl-dot d-teal"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">松雪樓 Check-in｜海拔 3,150m</div>
+        <div class="tl-desc">景觀雙人房，窗外正對奇萊連峰。入住後<b>立即平躺休息至少 1 小時</b>，讓身體適應高度，不要急著外出活動。提早抵達多出更多時間休息</div>
+        <div class="tags">
+          <span class="tag tag-teal">✓ 多喝水</span>
+          <span class="tag tag-red">✗ 勿飲酒</span>
+          <span class="tag tag-red">✗ 勿劇烈活動</span>
+        </div>
+        <div class="alert alert-warn">⚠️ <b>高山症高風險時段</b>：抵達後 2–4 小時。頭痛、噁心、失眠為常見症狀。普拿疼可緩解頭痛，症狀嚴重請立即下山。</div>
+        <a class="tl-link" href="https://www.google.com/maps/place/?q=place_id:ChIJNbD8IRaTaDQRE71-kF2HaZs" target="_blank">📍 松雪樓 → Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 17:00 -->
+    <div class="tl-row">
+      <div class="tl-time">17:00</div>
+      <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">松雪樓晚餐（自助 Buffet）</div>
+        <div class="tl-desc">高山食慾可能降低，少量多餐，勿強迫進食</div>
+      </div>
+    </div>
+
+    <!-- 18:30 -->
+    <div class="tl-row">
+      <div class="tl-time">18:30</div>
+      <div class="tl-gutter"><div class="tl-dot d-gold"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">黃昏金光時段｜勘景 + 拍攝</div>
+        <div class="tl-desc">趁天亮熟悉東峰登山口位置、石門山登山口方向、步道入口，確認夜間行走路線。同時拍攝奇萊連峰剪影</div>
+        <div class="tags">
+          <span class="tag tag-gold">golden_pm 光線時段</span>
+          <span class="tag tag-purple">@55mm 壓縮山脈剪影</span>
+          <span class="tag tag-blue">@16mm 廣角全景</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 20:00 -->
+    <div class="tl-row">
+      <div class="tl-time">20:00</div>
+      <div class="tl-gutter"><div class="tl-dot d-gold"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">★ 銀河第一棒｜東峰登山口前廣場</div>
+        <div class="tl-desc">出門即到，以松雪樓建築一角或高山箭竹為剪影前景，鏡頭朝東南方，銀河開始從東南方升起。測光、確認對焦後正式開拍</div>
+        <div class="tags">
+          <span class="tag tag-gold">步行 0 分鐘</span>
+          <span class="tag tag-blue">方位：東南 SE 120°</span>
+          <span class="tag tag-blue">GPS 24.1409, 121.2858</span>
+        </div>
+        <a class="tl-link" href="https://maps.google.com/?q=24.1409,121.2858" target="_blank">📍 東峰登山口前廣場 → Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 20:30 -->
+    <div class="tl-row">
+      <div class="tl-time">20:30</div>
+      <div class="tl-gutter"><div class="tl-dot d-gold"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">★ 銀河第二棒｜石門山步道入口小平台</div>
+        <div class="tl-desc">
+          沿台14甲往武嶺方向步行 10–15 分鐘至石門山登山口，進入步道入口不到 100m 處即是小平台。
+          月亮尚在，<b>月光讓公路前景更有層次</b>，拍車軌＋月光＋銀河三合一。待到 22:34 月沉前
+        </div>
+        <div class="tags">
+          <span class="tag tag-gold">步行 10–15 分鐘</span>
+          <span class="tag tag-blue">GPS 24.1470, 121.2841</span>
+          <span class="tag tag-teal">車軌 + 月光 + 銀河</span>
+          <span class="tag tag-blue">@16mm</span>
+        </div>
+        <div class="alert alert-info">💡 <b>車軌拍法：</b>等車燈出現再開快門，25–30s，拍 3–5 張後在 Lightroom 疊加合成。建議同時拍一張無車純銀河版備用。</div>
+        <a class="tl-link" href="https://www.google.com/maps/place/?q=place_id:ChIJL5KBCXHraDQR_ZtyTZuJjAY" target="_blank">📍 石門山步道 → Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 22:34 -->
+    <div class="tl-row">
+      <div class="tl-time">22:34</div>
+      <div class="tl-gutter"><div class="tl-dot d-blue"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">月沉！立刻出發往東峰登山口</div>
+        <div class="tl-desc">返回松雪樓後方登山口，穿好保暖層、確認頭燈電量，兩人同行出發。步行約 30–40 分鐘後抵達廢棄纜車站，剛好進入完全無月黃金時段</div>
+        <div class="tags"><span class="tag tag-red">月沉後立即行動</span></div>
+      </div>
+    </div>
+
+    <!-- 23:15 -->
+    <div class="tl-row">
+      <div class="tl-time">23:15</div>
+      <div class="tl-gutter"><div class="tl-dot d-gold"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">★ 銀河第三棒｜合歡東峰廢棄纜車站（黃金無月時段）</div>
+        <div class="tl-desc">完全無月光，進入最純淨的銀河時段。廢棄鐵架地景搭配銀河核心，張力最強。可拍到約 01:00</div>
+        <div class="tags">
+          <span class="tag tag-red">步行 30–40 分鐘（陡坡）</span>
+          <span class="tag tag-blue">步道 0.5K 處</span>
+          <span class="tag tag-teal">無月黃金時段</span>
+          <span class="tag tag-blue">方位：東南→南</span>
+        </div>
+        <a class="tl-link" href="https://maps.google.com/?q=24.1409,121.2858" target="_blank">📍 合歡東峰登山口（松雪樓後方）→ Google Maps</a>
+
+        <!-- 步道說明 -->
+        <div style="margin-top:10px; background: var(--bg3); border-radius:7px; border:1px solid var(--border); padding:12px 14px;">
+          <div style="font-size:11px; color:var(--text3); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">東峰步道夜間詳細說明</div>
+          <ul class="steps">
+            <li><b>登山口位置：</b>松雪樓後方直接進入（勿走滑雪山莊側，會多繞路）</li>
+            <li><b>0–0.2K：</b>平緩鋪面轉木棧階梯，路況清楚，頭燈照路即可</li>
+            <li><b>0.2–0.4K：</b>陡坡階梯，全程木棧道。夜間放慢步伐，每走 10 分鐘可停一下調整呼吸（高海拔缺氧正常）</li>
+            <li><b>0.5K：廢棄纜車站</b> — 步道右側可見廢棄鐵架，稍微偏離步道往右切一小段路即到達</li>
+            <li>到達後<b>原地拍攝，不繼續往上登頂</b>（夜間危險，且目標已達）</li>
+            <li>拍完後原路下山，下坡更需放慢腳步，腳架收好、單手持頭燈</li>
+          </ul>
+          <div class="alert alert-warn" style="margin-top:8px;">⚠️ 纜車站廢棄金屬零件散落，勿攀爬、勿踩踏不明結構。兩人不可分散。</div>
+        </div>
+
+        <div class="tags" style="margin-top:8px;">
+          <span class="tag tag-blue">@16mm 廢鐵架 + 銀河拱橋</span>
+          <span class="tag tag-purple">魚眼鏡 廢墟放射構圖</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 00:30 -->
+    <div class="tl-row">
+      <div class="tl-time">00:30</div>
+      <div class="tl-gutter"><div class="tl-dot d-blue"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">收工，原路下山返回松雪樓</div>
+        <div class="tl-desc">下坡更需注意腳步，全程開頭燈</div>
+      </div>
+    </div>
+
+    <!-- 01:00 -->
+    <div class="tl-row">
+      <div class="tl-time">01:00</div>
+      <div class="tl-gutter"><div class="tl-dot"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">就寢｜設鬧鐘 04:20</div>
+        <div class="tl-desc">約 3.5 小時後起床，睡前補充水分</div>
+      </div>
+    </div>
+
+  </div><!-- /timeline -->
+</div><!-- /section day1 -->
+
+
+<!-- ══════════════════ DAY 2 ══════════════════ -->
+<div class="section">
+  <div class="section-label">Day 2 · 6/20（六）</div>
+
+  <div class="day-header">
+    <span class="day-pill day-pill-2">DAY 2</span>
+    <span class="day-title">石門山日出 → 早餐 → Check-out → 返程</span>
+    <span class="day-meta">日出 05:12</span>
+  </div>
+
+  <div class="timeline">
+
+    <!-- 04:20 -->
+    <div class="tl-row">
+      <div class="tl-time">04:20</div>
+      <div class="tl-gutter"><div class="tl-dot d-gold"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">起床出發｜石門山日出</div>
+        <div class="tl-desc">穿好保暖層，帶頭燈出發。松雪樓→石門山登山口步行 10–15 分鐘，登頂約 30–35 分鐘，<b>全程木棧道平緩，新手完全可行</b></div>
+        <div class="alert alert-ok">✅ 石門山（海拔 3,237m）是最容易攀登的百岳，路線全木棧道，坡度平緩，帶頭燈夜間走完全沒問題。登山口距松雪樓沿台14甲步行約 10–15 分鐘，路標清楚。</div>
+        <a class="tl-link" href="https://www.google.com/maps/place/?q=place_id:ChIJL5KBCXHraDQR_ZtyTZuJjAY" target="_blank">📍 石門山登山口 → Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 05:12 -->
+    <div class="tl-row">
+      <div class="tl-time">05:12</div>
+      <div class="tl-gutter"><div class="tl-dot d-gold"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">日出！石門山頂（3,237m）</div>
+        <div class="tl-desc">6月20日日出約 05:12，全年最早的日出之一（夏至前後）。朝<b>東方奇萊連峰</b>拍，金光灑落山頭，高機率見雲海</div>
+        <div class="tags">
+          <span class="tag tag-gold">golden_am 晨間金光</span>
+          <span class="tag tag-blue">方位：東 E</span>
+          <span class="tag tag-blue">@16mm 全景山稜</span>
+          <span class="tag tag-purple">@55mm 壓縮金光山層</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06:30 -->
+    <div class="tl-row">
+      <div class="tl-time">06:30</div>
+      <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">下山返回松雪樓</div>
+        <div class="tl-desc">下山約 20–25 分鐘，返回梳洗整理行李</div>
+      </div>
+    </div>
+
+    <!-- 08:00 -->
+    <div class="tl-row">
+      <div class="tl-time">08:00</div>
+      <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-vline"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">松雪樓早餐（自助式）</div>
+        <div class="tl-desc">補充能量，整理裝備打包</div>
+      </div>
+    </div>
+
+    <!-- 10:00 -->
+    <div class="tl-row">
+      <div class="tl-time">10:00</div>
+      <div class="tl-gutter"><div class="tl-dot d-blue"></div></div>
+      <div class="tl-body">
+        <div class="tl-label">Check-out，下山返台南</div>
+        <div class="tl-desc">車程約 2.5–3 小時，可順道在霧社或埔里停用午餐，約下午返抵台南</div>
+      </div>
+    </div>
+
+  </div><!-- /timeline -->
+</div><!-- /section day2 -->
+
+
+<!-- ══════════════════ 銀河拍攝計畫 ══════════════════ -->
+<div class="section">
+  <div class="section-label">銀河拍攝計畫</div>
+
+  <!-- 第一棒 -->
+  <div class="shoot-card">
+    <div class="shoot-head">
+      <div class="shoot-num">1</div>
+      <div class="shoot-title">東峰登山口前廣場｜熱身場</div>
+      <div class="shoot-time">20:00–21:00</div>
+    </div>
+    <div class="shoot-body">
+      <div class="meta-grid">
+        <div class="meta-cell"><div class="meta-label">座標</div><div class="meta-val">24.1409, 121.2858</div></div>
+        <div class="meta-cell"><div class="meta-label">步行時間</div><div class="meta-val">出門即到</div></div>
+        <div class="meta-cell"><div class="meta-label">銀河方位</div><div class="meta-val">東南 SE 120°</div></div>
+        <div class="meta-cell"><div class="meta-label">地景</div><div class="meta-val">松雪樓建築 + 箭竹剪影</div></div>
+      </div>
+      <ul class="steps">
+        <li>鏡頭朝東南，松雪樓一角或高山箭竹為前景剪影 <span class="tag tag-blue" style="font-size:9px;">@16mm</span></li>
+        <li>測試曝光，確認對焦在最亮星（MF 放大確認後鎖定）</li>
+        <li>拍 2–3 張測試確認構圖後，準備移往石門山步道</li>
+      </ul>
+      <a class="tl-link" href="https://maps.google.com/?q=24.1409,121.2858" target="_blank">📍 東峰登山口前廣場 → Google Maps</a>
+    </div>
+  </div>
+
+  <!-- 第二棒 -->
+  <div class="shoot-card">
+    <div class="shoot-head">
+      <div class="shoot-num">2</div>
+      <div class="shoot-title">石門山步道入口小平台｜車軌 + 銀河主打</div>
+      <div class="shoot-time">21:00–22:00</div>
+    </div>
+    <div class="shoot-body">
+      <div class="meta-grid">
+        <div class="meta-cell"><div class="meta-label">座標</div><div class="meta-val">24.1470, 121.2841</div></div>
+        <div class="meta-cell"><div class="meta-label">步行時間</div><div class="meta-val">沿台14甲 10–15 分鐘</div></div>
+        <div class="meta-cell"><div class="meta-label">銀河方位</div><div class="meta-val">南偏東 SE→S</div></div>
+        <div class="meta-cell"><div class="meta-label">地景</div><div class="meta-val">台14甲車軌 + 松雪樓</div></div>
+      </div>
+      <ul class="steps">
+        <li>從松雪樓沿台14甲往武嶺方向步行，約 10 分鐘到石門山登山口</li>
+        <li>進步道入口不到 100m 處即是小平台，右側俯視公路</li>
+        <li>等車輛通過時開快門 25–30s，連拍 3–5 張，Lightroom 疊加合成車軌</li>
+        <li>同時拍無車純銀河版備用，兩版交由後製決定</li>
+      </ul>
+      <div class="alert alert-info">💡 車軌焦段：<b>16mm 首選</b>（銀河弧線 + 公路延伸感最佳）；魚眼鏡可嘗試誇張透視版，邊緣變形後製可保留或壓回。</div>
+      <a class="tl-link" href="https://maps.google.com/?q=24.1470,121.2841" target="_blank">📍 石門山步道入口平台 → Google Maps</a>
+    </div>
+  </div>
+
+  <!-- 第三棒 -->
+  <div class="shoot-card">
+    <div class="shoot-head">
+      <div class="shoot-num">3</div>
+      <div class="shoot-title">合歡東峰廢棄纜車站｜黃金無月主場</div>
+      <div class="shoot-time">22:30–00:30</div>
+    </div>
+    <div class="shoot-body">
+      <div class="meta-grid">
+        <div class="meta-cell"><div class="meta-label">登山口座標</div><div class="meta-val">24.1409, 121.2858</div></div>
+        <div class="meta-cell"><div class="meta-label">纜車站位置</div><div class="meta-val">步道 0.5K 處</div></div>
+        <div class="meta-cell"><div class="meta-label">步行時間</div><div class="meta-val">登山口→纜車站 30–40 分</div></div>
+        <div class="meta-cell"><div class="meta-label">月光</div><div class="meta-val">22:30 後月沉，完全無月</div></div>
+      </div>
+      <ul class="steps">
+        <li>鏡頭朝東南方，廢棄鐵架為前景，銀河核心（人馬座方向）在上方 <span class="tag tag-blue" style="font-size:9px;">@16mm</span></li>
+        <li>魚眼鏡：以鐵架為中心呈放射構圖，銀河彎弧包圍廢墟，氛圍感極強</li>
+        <li>22:30 月沉後 ISO 可拉至 6400，星點密度最佳時段</li>
+        <li>多拍幾組不同構圖（橫向 / 直向），後製選優</li>
+      </ul>
+      <a class="tl-link" href="https://maps.google.com/?q=24.1409,121.2858" target="_blank">📍 合歡東峰登山口（松雪樓後方）→ Google Maps</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════ 相機參數 ══════════════════ -->
+<div class="section">
+  <div class="section-label">相機參數</div>
+  <div style="background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:16px 18px;">
+    <div class="param-grid">
+      <div class="param-block">
+        <div class="param-block-title">銀河主拍（16mm）</div>
+        <div class="param-row"><span class="param-key">光圈</span><span class="param-val">f/2.8 或最大值</span></div>
+        <div class="param-row"><span class="param-key">快門（500法則）</span><span class="param-val">500 ÷ 16 ≈ 31s</span></div>
+        <div class="param-row"><span class="param-key">ISO</span><span class="param-val">3200–6400</span></div>
+        <div class="param-row"><span class="param-key">白平衡</span><span class="param-val">3800–4200K 手動</span></div>
+        <div class="param-row"><span class="param-key">對焦</span><span class="param-val">MF，放大對最亮星</span></div>
+        <div class="param-row"><span class="param-key">後製軌道</span><span class="param-val">軌道 A（星景極簡）</span></div>
+      </div>
+      <div class="param-block">
+        <div class="param-block-title">車軌合成</div>
+        <div class="param-row"><span class="param-key">焦段</span><span class="param-val">16mm（首選）</span></div>
+        <div class="param-row"><span class="param-key">快門</span><span class="param-val">25–30s（等車燈）</span></div>
+        <div class="param-row"><span class="param-key">ISO</span><span class="param-val">1600–3200</span></div>
+        <div class="param-row"><span class="param-key">合成方式</span><span class="param-val">Lr 銀河 + 車軌疊加</span></div>
+        <div class="param-row"><span class="param-key">55mm 用途</span><span class="param-val">日落剪影 / 食物拍攝</span></div>
+        <div class="param-row"><span class="param-key">魚眼用途</span><span class="param-val">廢墟放射構圖</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════ 鏡頭分工 ══════════════════ -->
+<div class="section">
+  <div class="section-label">鏡頭分工</div>
+  <div class="lens-grid">
+    <div class="lens-card">
+      <div class="lens-mm">16mm</div>
+      <div class="lens-name">廣角定焦｜全程主力</div>
+      <ul class="lens-uses">
+        <li>銀河主拍（快門 31s）</li>
+        <li>車軌 + 銀河合成</li>
+        <li>廢棄纜車站地景</li>
+        <li>石門山日出全景</li>
+      </ul>
+    </div>
+    <div class="lens-card">
+      <div class="lens-mm">55mm</div>
+      <div class="lens-name">標準焦段｜白天輔助</div>
+      <ul class="lens-uses">
+        <li>斯娜堡料理特寫（軌道C）</li>
+        <li>黃昏奇萊連峰壓縮剪影</li>
+        <li>石門山日出山層壓縮</li>
+        <li>不適合銀河（視角太窄）</li>
+      </ul>
+    </div>
+    <div class="lens-card">
+      <div class="lens-mm">魚眼</div>
+      <div class="lens-name">手動魚眼｜創意場景</div>
+      <ul class="lens-uses">
+        <li>廢棄纜車站放射構圖</li>
+        <li>車軌誇張透視版</li>
+        <li>對焦∞後微調確認</li>
+        <li>桶狀變形後製可保留</li>
+      </ul>
+    </div>
+    <div class="lens-card">
+      <div class="lens-mm">20–70mm</div>
+      <div class="lens-name">變焦備用</div>
+      <ul class="lens-uses">
+        <li>白天彈性構圖</li>
+        <li>銀河備用（f/4，ISO 需更高）</li>
+        <li>旅途記錄</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════ 裝備清單 ══════════════════ -->
+<div class="section">
+  <div class="section-label">裝備清單</div>
+  <div class="gear-grid">
+    <div class="gear-block">
+      <div class="gear-title">攝影器材</div>
+      <ul class="gear-list">
+        <li>A7C2 機身</li>
+        <li>16mm（主力）</li>
+        <li>魚眼鏡（廢墟創意）</li>
+        <li>55mm（白天輔助）</li>
+        <li>20–70mm f/4（備用）</li>
+        <li>腳架（必備）</li>
+        <li>快門線 / 手機遙控App</li>
+        <li>備用電池 × 2</li>
+        <li>大容量記憶卡</li>
+        <li>吹球 + 鏡頭布</li>
+      </ul>
+    </div>
+    <div class="gear-block">
+      <div class="gear-title">保暖 / 安全</div>
+      <ul class="gear-list">
+        <li>羽絨外套（夜間 5–8°C）</li>
+        <li>毛帽 + 頸套</li>
+        <li>防風手套（觸控型）</li>
+        <li>保暖內層 + 排汗衣</li>
+        <li>登山鞋 / 防滑鞋</li>
+        <li>頭燈（備用電池）</li>
+        <li>暖暖包 × 4</li>
+        <li>保溫水壺（熱飲）</li>
+        <li>行動電源</li>
+      </ul>
+    </div>
+    <div class="gear-block">
+      <div class="gear-title">高山症藥物</div>
+      <ul class="gear-list">
+        <li>丹木斯（需醫師開立，出發前一天服用）</li>
+        <li>普拿疼（頭痛備用）</li>
+        <li>胃藥（高山食慾差）</li>
+        <li>暈車藥（上山路彎多）</li>
+        <li>OK繃 / 小急救包</li>
+      </ul>
+    </div>
+    <div class="gear-block">
+      <div class="gear-title">App / 工具</div>
+      <ul class="gear-list">
+        <li>Star Walk 2 或 Stellarium</li>
+        <li>Windy（出發前3天查雲況）</li>
+        <li>中央氣象署（合歡山即時）</li>
+        <li>離線地圖（山上訊號差）</li>
+        <li>手機充滿電，帶行動電源</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════ 注意事項 ══════════════════ -->
+<div class="section">
+  <div class="section-label">注意事項</div>
+  <div style="display:flex; flex-direction:column; gap:8px;">
+    <div class="alert alert-warn">
+      <b>高山症：</b>抵達後 2–4 小時為高風險期。頭痛、噁心、嘔吐為警訊。丹木斯需出發前一天開始服用，需醫師處方。症狀嚴重請立即下山，不可強撐。
+    </div>
+    <div class="alert alert-warn">
+      <b>天氣：</b>出發前 3 天用 Windy 確認合歡山當晚雲況。6月午後常有霧，夜間是否放晴為最大變數，做好備案心理準備。
+    </div>
+    <div class="alert alert-info">
+      <b>夜間安全：</b>全程兩人同行，不分散。頭燈全程開著，夜間步道無路燈。廢棄纜車站金屬零件不得攀爬踩踏。
+    </div>
+    <div class="alert alert-info">
+      <b>低溫：</b>6月夜間 5–8°C，加上風寒體感更低。相機電池低溫耗電快，放口袋保溫，備用電池同樣保溫備用。
+    </div>
+    <div class="alert alert-ok">
+      <b>月相確認：</b>6月14日新月，6/19距新月第5天，月亮極細，22:30前後沉落。銀河拍攝條件本趟極佳。
+    </div>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<div class="footer">
+  合歡山銀河之旅 · 6/19–6/20 · 松雪樓景觀雙人房 · 海拔 3,150m
+</div>
+
+</body>
+</html>
